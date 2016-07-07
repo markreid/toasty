@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toasty.js</title>
+
+    <style type="text/css">
+        body {
+            font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+            font-weight: 200;
+            padding: 100px;
+            color: skyblue;
+            font-size: 18px;
+        }
+
+        p.instructions {
+            color: navy;
+            margin-bottom: 2em;
+        }
+
+        p.success {
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Toasty.js</h1>
+    <p class="instructions">
+        <button>Make Toast</button>
+    </p>
+    <p class="instructions">
+        <a href="http://mortalkombat.wikia.com/wiki/Toasty!">WTF is this all about?</a>
+    </p>
+
+
+    <script src="dist/toasty.js"></script>
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            toasty({
+                imagePath: './media/toasty.gif',
+                audioPath: './media/toasty.mp3',
+            });
+        });
+    </script>
+
+</body>
+</html>
